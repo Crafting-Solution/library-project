@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ACTIVE LINKS */
+nav #sideNav .router-link-active {
+    @apply text-gray-500;
+}
+  
+nav #sideNav .router-link-exact-active {
+    @apply bg-blue-100 border-r-4 border-r-blue-500 transition-all text-black
+}
+
+
+/* PADDINATION QUICK LINKS */
+nav #paddination-links .router-link-active {
+    @apply text-black;
+}
+nav #paddination-links .router-link-exact-active {
+    @apply text-black font-semibold; 
+}
+
+/* DEFAULT BUTTONS */
+.defaultQuicButton{
+    @apply flex justify-center items-center bg-blue-500 p-3 pl-5 pr-7 rounded-md text-gray-100 font-medium gap-1;
+}
+.defaultTransparentButton{
+    @apply flex justify-center items-center border text-gray-500 p-3 pl-5 pr-7 rounded-md font-medium gap-1
+}
+.fadedBlueButton{
+    @apply flex justify-center items-center bg-blue-300 p-3 pl-5 pr-7 rounded-md text-gray-100 font-medium gap-1;
+}
+
+/* DEFAULT INPUT STYLES */
+.defaultInputStyle{
+    @apply border p-3 text-base rounded-md w-customWidth
+}
+
+/* DEFAULT ACTIVE INPUT STYLES */
+.defaultInputActiveStyle{
+    @apply border border-green-300 p-3 text-base rounded-md w-customWidth focus:border-none focus:outline-green-300
+}
+
+/* Badge buttons */
+.unavailableBadge{
+    @apply p-2 bg-red-100 text-red-500 border border-red-300 rounded-sm text-base
+}
+
+.availableBadge{
+    @apply p-2 bg-green-100 text-green-500 border border-green-300 rounded-sm text-sm
+}
+
+.outOfStockBadge{
+    @apply p-2 bg-gray-100 text-gray-400 border border-gray-300 rounded-sm text-base
+}
+
+/* LOAN PAGGINATION LINKS */
+.wrapper nav #user-content #loan-pag .router-link-active {
+    @apply bg-blue-500 text-gray-500 font-bold rounded-md;
+}
+
+.wrapper nav #user-content #loan-pag a:hover {
+    @apply bg-blue-400 text-white;
+}
+
+
+/* Paggination Page Option */
+.pagPageOption{
+    @apply border border-gray-500 p-1 text-sm rounded-md w-28 focus:outline-none text-gray-500
+}
